@@ -1,156 +1,137 @@
-#adminMenu ul
-{
-    margin:0px;
-    padding:0px;
-    list-style: none;
+/* @swap1210
+  try using em and rem instead of fixed pixcel unit px
+*/
+
+#adminMenu ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
-#adminMenu ul a
-{
-    text-decoration:none;
+#adminMenu ul a {
 }
 
-#adminMenu ul li 
-{
-  text-align:center;	
-  height:30px;
-  line-height:30px;
-  border-bottom:1px solid black;
-  border-bottom-color: #CDCDCD;
-  
+#adminMenu ul li {
+  text-align: center;
+  /* height: 30px;
+  line-height: 30px; */
+  border-bottom: 1px solid black;
+  border-bottom-color: #cdcdcd;
 }
-#adminMenu ul a li
-{
- color:black;
- font-size: 17px;
+#adminMenu ul a li {
+  color: black;
+  font-size: 17px;
 }
 
-#adminMenu ul li:hover
-{
-  background-color:#CDCDCD;
+#adminMenu ul li:hover {
+  background-color: #cdcdcd;
 }
 
-#aMiframe
-{
-    min-height: 600px;
-    padding: 0px;
-    
+body {
+  font-family: monospace;
+  padding: 0% 1% 0% 1%;
 }
 
-body{
-    font-family: monospace;
-    padding: 0% 1% 0% 1%;    
+#CategoryForm {
+  margin: 20px auto 0px auto;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.5em;
+  background-color: #f1f1f1;
+  min-height: 200px;
+  padding: 1.5em 1em;
 }
 
-#CategoryForm
-{
-    margin:20px auto 0px auto;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 50px;
-    background-color:#F1F1F1 ;
-    width:500px;
-    min-height:200px;
-    padding: 35px 0px 0px 55px;
-    
+#CategoryForm input[type="submit"],
+#CategoryForm input[type="reset"] {
+  background-color: darkgrey;
+  border-radius: 5px;
 }
 
-#CategoryForm input[type="submit"], #CategoryForm input[type="reset"]{
-    background-color: darkgrey;
-    border-radius:5px;
+#CategoryForm input[type="submit"]:hover,
+#CategoryForm input[type="reset"]:hover {
+  background-color: #d9d9d9;
 }
 
-#CategoryForm input[type="submit"]:hover, #CategoryForm input[type="reset"]:hover{
-    background-color:#D9D9D9; 
+#header {
+  height: 90px;
+  text-shadow: #d9d9d9 2px 2px;
 }
 
-
-#CategoryForm table
-{
-    font-size: 18px;
+#header a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 }
 
-#CategoryForm table tr td
-{
-    min-width:270px;
-    height:40px;
-    
+#header a:hover {
+  color: #4c4c4c;
 }
 
-#header
-{
-    height: 90px;
-    text-shadow:#D9D9D9 2px 2px;
- 
+#logoimg {
+  margin: 3%;
 }
 
-#header a
-{
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
+.responseMsg {
+  color: red;
+  margin: 10px;
+  font-size: 15px;
+}
+.signupform {
+  padding: 10%;
+  border-radius: 25px;
+  background-image: url(../images/RegistrationBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  font-family: monospace;
+  font-weight: bold;
 }
 
-#header a:hover
-{
-    color: #4C4C4C;
+.signupform a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 }
 
-#logoimg
-{
-    margin: 3%;
+.signupform a:hover {
+  color: #4c4c4c;
 }
 
-.responseMsg
-{
-    color: red;
-    margin: 10px;
-    font-size: 15px;
-}
-.signupform
-{
-    
-    padding: 10%;
-    border-radius: 25px;
-    background-image: url(../images/RegistrationBg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100%;
-    font-family:monospace; 
-    font-weight: bold;
-    
+.signupform input[type="text"],
+.signupform input[type="password"] {
+  width: 200px;
+  font-size: 20px;
 }
 
-.signupform a{
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
+.signupform input[type="submit"],
+.signupform input[type="reset"] {
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: darkgrey;
+  border-radius: 5px;
 }
 
-.signupform a:hover{
-    color: #4C4C4C;
+.signupform input[type="submit"]:hover,
+.signupform input[type="reset"]:hover {
+  background-color: #d9d9d9;
 }
 
-.signupform input[type="text"], .signupform input[type="password"]{
-    width: 200px;
-    font-size: 20px;
+.signupform table {
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+  height: 300px;
+  width: 450px;
+}
+#footer {
+  padding-top: 1em;
+}
+#footer a {
+  font-size: 20px;
+  color: black;
 }
 
-.signupform input[type="submit"], .signupform input[type="reset"]{
-    font-family: monospace;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: darkgrey;
-    border-radius:5px;
-}
-
-.signupform input[type="submit"]:hover, .signupform input[type="reset"]:hover{
-    background-color:#D9D9D9; 
-}
-
-.signupform table{
-    font-size: 20px;
-    margin-left: 10px;
-    font-weight: bold;
-    height: 300px;
-    width: 450px;
+#footer a:hover {
+  color: #4c4c4c;
 }

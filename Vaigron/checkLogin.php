@@ -1,5 +1,9 @@
-<?php
+<!-- @swap1210
+Setting a session variable here so the data fetched (current user details) can be directly checked and used all over the pages
+-->
 
+<?php
+session_start();
 $txtUsername=$_POST["txtUsername"];
 $txtPassword=$_POST["txtPassword"];
 
@@ -16,7 +20,7 @@ if($w==0)
 else
 {
     $row=mysqli_fetch_array($rsuser);
-    
+    $_SESSION["user_det"] = $row;
     if($row["userpass"]==$txtPassword)
     {
         if($row["usertype"]=="admin")
